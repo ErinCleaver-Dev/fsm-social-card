@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   <div id="social-card" aria-label="social card">
+    </div>
+    <button id="loadmore">Load More</button>
+
+   
+      <script id="cardsTpl" type="text/x-handlebars-template">
+      <div id="profile-pic" aria-label="profile picture background">
+        <figure><img src="https://source.unsplash.com/150x150/?person" alt="Profile Picture" /></figure>
+      </div>
+      <div id="personal-info" aria-label="personal information" >
+        <h4 id="full-name">{{name}} <span id="age" aria-label="age">{{age}}</span></h4>
+        <p id="city">{{location}}</p>
+        <div
+          id="social-statistics" aria-label="social media
+        statistics"
+        ><div class="social-stats" aria-label="number of followers">
+            <p class="social-stats-no">{{followers}}</p>
+            <p class="social-stats-label">Followers</p>
+        </div>
+        <div class="social-stats" aria-label="number of likes">
+            <p class="social-stats-no">{{likes}}</p>
+            <p class="social-stats-label">Likes</p>
+        </div>
+        <div class="social-stats" aria-label="number of photos">
+            <p class="social-stats-no">{{photos}}</p>
+            <p class="social-stats-label">Photos</p>
+        </div>
+      </div>
+    </script>
+	
+	
+	
+   
+   <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
